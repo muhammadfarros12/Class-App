@@ -58,6 +58,8 @@
             android:layout_centerInParent="true"
             android:background="@drawable/button_bg"
             android:backgroundTint="@color/blue"
+            android:clickable="true"
+            android:focusable="true"
             android:fontFamily="@font/poppins"
             android:paddingHorizontal="@dimen/_40sdp"
             android:paddingVertical="@dimen/_10sdp"

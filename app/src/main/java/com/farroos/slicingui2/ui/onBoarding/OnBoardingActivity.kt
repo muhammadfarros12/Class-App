@@ -1,9 +1,11 @@
 package com.farroos.slicingui2.ui.onBoarding
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
+import com.farroos.slicingui2.MainActivity
 import com.farroos.slicingui2.PageAdapter
 import com.farroos.slicingui2.R
 import com.farroos.slicingui2.databinding.ActivityOnBoardingBinding
@@ -24,6 +26,11 @@ class OnBoardingActivity : AppCompatActivity() {
         binding.txtSkip.setOnClickListener {
             val currentItemPosition = binding.viewPager.currentItem
             binding.viewPager.setCurrentItem(currentItemPosition + 2, true)
+        }
+
+        binding.btnNext.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
     }
